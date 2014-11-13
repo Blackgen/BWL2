@@ -1,0 +1,25 @@
+* { margin: 0; padding: 0; }
+header {background: dimgrey;  color: mintcream;}
+
+header nav > ul {padding: 25px 0;}
+
+/* Hauptliste Level 1 Produktebenen, Kontoeinstellungen, Einkaufswagen...*/
+header nav > ul > li {display: inline-block; margin: 0 10px;}
+header nav ul li a {color: mintcream; text-decoration: none; padding-bottom: 25px;}
+header nav ul li a:hover {text-decoration: underline;}
+
+/*Hauptliste Level 2*/
+header nav ul li ul {position: absolute; background-color: silver; display: none; margin-top: 25px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;}
+header nav ul li ul li {display: block; padding: 5px 10px; border-bottom: 1px solid mintcream;}
+header nav ul li ul li.last {border: 0;}
+header nav ul li:hover ul {display: block;}
+
+
+header nav {float: left;}
+header .searchfield {float: right; padding: 15px 0;}
+
+.innerholder {width: 900px; margin: 0 auto; }
+
+input {width: 250px; padding: 10px; border-radius: 5px;}
+
+header:after { display: block; content: "."; clear: both; font-size: 0; line-height: 0; height: 0; overflow: hidden; }
